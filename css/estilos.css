@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---------------------- ESTILOS GENERALES PARA EL SITIO WEB ---------------------*/
+
+body {
+    background-color: #3a3d47; /*COLOR HEXÁDECIMAL*/
+    font-family: Verdana; /*ESTILO DE FUENTE*/
+}
+
+/*------------------ ESTILOS GENERALES PARA EL CONTENIDO DEL SITIO ---------------*/
+
+.container{ 
+    width: 1200px; /* ANCHO DEL CONTENEDOR */
+    background: #f5f5f5; /* COLOR DE CONTENEDOR */
+    margin: auto; /* MARGEN EXTERIOR DEL CONTENDOR */
+}
+
+                            /* ESTILOS PARA EL ENCABEZADO */
+.top {
+    background: #1551a1;
+    overflow: hidden; /* OCULTA LOS ELEMENTOS QUE QUEDAN FUERA DEL CONTENEDOR */
+}
+
+.logo {
+    float: left; /* HACE FLOTAR EL LOGO EN ESTE CASO A LA IZQUIERDA */
+    width: 300px;
+    padding: 35px;
+}
+
+/*----------------------- ESTILOS PARA EL MENU DE NAVEGACIÓN ----------------------*/
+
+.menu {
+    float: left; /* HACE FLOTAR EL MENU A LA IZQUIERDA */
+    padding: 50px; /* ESPACIO ENTRE EL CONTENEDOR Y EL CONTENIDO */
+    font-size: 20px; /* TAMAÑO DE LA FUNTE */
+}
+
+.options li {
+    float: left;
+    list-style: none; /* ESTILOS DE LISTA */
+}
+
+.options a {
+    padding: 25px;
+    text-decoration: none; /* LIMPIA EL FORMATO DEL CONTEDIDO */
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    margin: 2px;
+}
+
+.options li a:hover {
+    color: #0d356a;
+    background: #f5f5f5;
+    
+}
+
+/*--------------------------------- ESTILOS DEL SLIDER --------------------------*/
+
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden; /*- hidden oculta el contenido -*/
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 16s infinite alternate;
+}
+
+.slider ul:hover {
+    cursor: pointer;
+    animation-play-state: paused;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+/*------------------------------ KEYFRAME ANIMATION SLIDER ----------------------*/
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+/*------------------------ ESTILOS DE PRODUCTOS Y SERVICIOS ---------------------*/
+
+.cuerpo {
+    overflow: hidden;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px 0 15px 0;
+    color: #ff7600;
+    font-size: 35px;
+}
+
+.caja {
+    float: left;
+    width: 378px;
+    margin: 10px;
+}
+
+.subtitulo {
+    background: #1551a1;
+}
+
+.servicios {
+    color: #f5f5f5;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.contenido {
+    padding: 20px;
+    text-align: justify;
+    border: 1px solid;
+
+}
+
+.efecto:hover {
+    background: #1551a1;
+    opacity: .65;
+    cursor: pointer;
+}
+
+.boton {
+    padding: 15px 20px;
+    margin: 25px 0 0;
+    cursor: pointer;
+    background: #144a91;
+    color: #f5f5f5;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.boton:hover {
+    background: #0c2c57;
+}
+
+/*------------------------ ESTILOS DEL GPS ---------------------*/
+
+.location {
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+/*------------------------- ESTILOS DEL FOOTER -------------------*/
+
+.pie {
+    overflow: hidden;
+    background: #062348;
+}
+
+.izquierda {
+    width: 550px;
+    padding: 20px;
+    float: left;
+}
+
+.abajo {
+    color: #fff;
+    text-align: justify;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.derecha {
+    width: 550px;
+    padding: 20px;
+    float: right;
+}
+
+.siguenos {
+    color:#fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.redes {
+    cursor: pointer;
+}

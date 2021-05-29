@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*ESTILOS GENERALES PARA EL SITIO WEB*/
+body{
+    background-color: #3a3d47; /*COLOR HEXÁDECIMAL*/
+    font-family: Verdana; /*ESTILO DE FUENTE*/
+}
+                            /* ESTILOS GENERALES PARA EL CONTENIDO DEL SITIO */
+.container{
+    width: 1200px; /* ANCHO DEL CONTENEDOR */
+    background: #f5f5f5; /* COLOR DE CONTENEDOR */
+    margin: 10px auto; /* MARGEN EXTERIOR DEL CONTENDOR */
+}
+
+                            /* ESTILOS PARA EL ENCABEZADO */
+.top{
+    background: #1551a1;
+    overflow: hidden; /* OCULTA LOS ELEMENTOS QUE QUEDAN FUERA DEL CONTENEDOR */
+}
+.logo{
+    float: left; /* HACE FLOTAR EL LOGO EN ESTE CASO A LA IZQUIERDA */
+    width: 300px;
+    padding: 35px;
+}
+
+                            /* ESTILOS PARA EL MENU DE NAVEGACIÓN */
+.menu{
+    float: left; /* HACE FLOTA EL MENU A LA IZQUIERDA */
+    padding: 50px; /* ESPACIO ENTRE EL CONTENEDOR Y EL CONTENIDO */
+    font-size: 20px; /* TAMAÑO DE LA FUNTE */
+}
+.options li{
+    float: left;
+    list-style: none; /* ESTILOS DE LISTA */
+}
+.options a{
+    padding: 25px;
+    text-decoration: none; /* LIMPIA EL FORMATO DEL CONTEDIDO */
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    margin: 2px;
+}
+.options li a:hover{
+    color: #0d356a;
+    background: #f5f5f5;
+    
+}
+
+                            /* ESTILOS DEL SLIDER */
+                            
+.slider{
+    width: 100%;
+    height: 100%;
+    margin: 5px auto 5px;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    transition: all 300ms;
+}
+.slider li{
+    width: 400%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+.slider ul:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 300ms;
+    animation-play-state: paused;
+}
+@keyframes slider{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    75%{margin-left: -200%;}
+
+    80%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+                            /* ESTILOS DE MODAL */
+.modal{
+    display: none;
+}
+.modal:target{
+    display: block;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.modal h3{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 5% 45%;
+}
+.image{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image a{
+    width: 500px;
+    height: 800px;
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+    align-items: center;
+}
+/* .image a:nth-child(2){
+    margin: 0;
+    height: 100%;
+
+    flex-shrink: 2;
+} */
+.image img{
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+}
+.closed{
+    position: relative;
+    display: block;
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
